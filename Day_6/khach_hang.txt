@@ -1,0 +1,4 @@
+ten, diachi, sdt
+bac, Hanoi, 097687
+trung, Danang, 89785
+nam, Hochiminh, 986564
