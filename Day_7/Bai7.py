@@ -84,6 +84,8 @@ class Nhanvien:
     def update_nv(self):
         ten_cu = input("Nhập tên nhân viên cũ: ")
         ten_moi = input("Nhập tên nhân viên mới: ")
+        x = self.nhanviens.index(ten_cu)
+        self.nhanviens[x]=ten_moi
         return self.nhanviens
 
     def xoa_nv(self):
