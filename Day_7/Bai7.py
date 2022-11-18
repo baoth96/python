@@ -1,3 +1,17 @@
+# LẬP TRÌNH HƯỚNG ĐỐI TƯỢNG (OOP)
+
+# BÀI TẬP 1:
+# You are making a video game! The given code declares a Player class, with its
+# attributes and an intro() method.
+# Complete the code to take the name and level from user input, create a Player project
+# with the corresponding values and call the intro() method of that object.
+
+# Sample input: Tony
+#               12
+# Sample output: Tony (Level 12)
+
+# GIẢI:
+
 # class Player:
 #     def __init__(self, name, level):
 #         self.name = name
@@ -8,6 +22,8 @@
 
 # tony = Player("Tony", 12)
 # print(tony.intro())
+
+# ---------------------------------------------------------------------------------
 
 
 # class Pet:
