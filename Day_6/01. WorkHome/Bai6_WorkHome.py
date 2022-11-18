@@ -13,6 +13,7 @@
 
 # GIẢI:
 
+# Cách 1:
 # with open("inp.txt", "r") as f:
 #     nums = f.read()
 #     lst = [int(i) for i in nums.split(" ")]
@@ -24,6 +25,14 @@
 #     s = s + n1
 #     list.append(s)
 # print(list)
+
+
+# Cách 2:
+# ls = []
+# lst = [1, 2, 3, 4]
+# for i in lst:
+#     ls.append(sum(lst[0:i]))
+# print(ls)
 
 # ----------------------------------------------------------------------------
 
@@ -39,6 +48,7 @@
 
 # GIẢI:
 
+# Cách 1:
 with open("inp.txt", "r") as f:
     nums = f.read()
     lst = [int(i) for i in nums.split(" ")]
@@ -58,3 +68,14 @@ for i in range(0, a):
     list_3 = list_3 + str(list_1[i]) + " " + str(list_2[i]) + " "
     lst_3 = list_3.split()
 print(lst_3)
+
+
+# Cách 2:
+# nums = [2, 5, 1, 3, 4, 7]
+
+# lst = []
+# for i in range(0, len(nums)-3):
+#     lst.append(nums[i])
+#     lst.append(nums[i+3])
+
+# print(lst)

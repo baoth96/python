@@ -69,3 +69,6 @@
 
 # GIẢI:
 
+class Nhanvien:
+    nhanviens = []
+
