@@ -59,7 +59,7 @@
 #                               Quản lý nhân viên
 
 # 1. Tạo class có tên Nhân viên
-# 2. Tạo một biến thuộc lớp để lưu trữ nhận viên
+# 2. Tạo một biến thuộc lớp để lưu trữ nhân viên
 # 3. Viết hàm thêm thông tin nhân viên
 # 4. Viết hàm cập nhật thông tin nhân viên
 # 5. Viết hàm xoá nhân viên
@@ -72,3 +72,43 @@
 class Nhanvien:
     nhanviens = []
 
+    def add_nv(self):
+        n = int(input("Nhập số lượng nhân viên: "))
+        for i in range(n):
+            ten = input("Nhập tên nhân viên: ")
+            self.nhanviens.append(ten)
+
+    def hien_thi(self):
+        return self.nhanviens
+
+    def update_nv(self):
+        ten_cu = input("Nhập tên nhân viên cũ: ")
+        ten_moi = input("Nhập tên nhân viên mới: ")
+        return self.nhanviens
+
+    def xoa_nv(self):
+        ten = input("Nhập tên nhân viên cần xóa: ")
+        self.nhanviens.remove(ten)
+        return self.nhanviens
+
+nv_obj = Nhanvien()
+
+chon = 0
+while chon != 5:
+    print("1. Thêm nhân viên")
+    print("2. Hiển thị nhân viên")
+    print("3. Cập nhật nhân viên")
+    print("4. Xóa nhân viên")
+    print("5. Thoát chương trình")
+
+    chon = int(input("Mời chọn chức năng: "))
+    if chon == 1:
+        nv_obj.add_nv()
+    elif chon == 2:
+        print(nv_obj.hien_thi())
+    elif chon == 3:
+        print(nv_obj.update_nv())
+    elif chon == 4:
+        print(nv_obj.xoa_nv())
+    else:
+        print("Kết thúc, thoát chương trình")
