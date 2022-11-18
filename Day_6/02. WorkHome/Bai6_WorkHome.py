@@ -38,6 +38,7 @@
 
 # GIẢI:
 
+# Cách 1:
 # def fibonaci(n):
 #     f0 = 0
 #     f1 = 1
@@ -59,3 +60,10 @@
 # with open("out.txt", "w") as f:
 #     f.write(lst)
 
+# Cách 2:
+n = 13
+
+lst = [1, 1]
+for i in range(2, n):
+    lst.append(lst[i-1] + lst[i-2])
+print(lst[0:lst.index(n)+1])
