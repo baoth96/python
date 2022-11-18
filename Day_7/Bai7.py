@@ -55,3 +55,17 @@
 
 # BÀI TẬP VỀ NHÀ:
 
+#                                   Projec OOP
+#                               Quản lý nhân viên
+
+# 1. Tạo class có tên Nhân viên
+# 2. Tạo một biến thuộc lớp để lưu trữ nhận viên
+# 3. Viết hàm thêm thông tin nhân viên
+# 4. Viết hàm cập nhật thông tin nhân viên
+# 5. Viết hàm xoá nhân viên
+# 6. Viết hàm hiển thị thông tin nhân viên
+# 7. Tạo đối tượng thuộc lớp nhân viên
+# 8. Tạo menu chức năng của chương trình
+
+# GIẢI:
+
