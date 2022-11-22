@@ -85,7 +85,7 @@ class Nhanvien:
         ten_cu = input("Nhập tên nhân viên cũ: ")
         ten_moi = input("Nhập tên nhân viên mới: ")
         x = self.nhanviens.index(ten_cu)
-        self.nhanviens[x]=ten_moi
+        self.nhanviens[x] = ten_moi
         return self.nhanviens
 
     def xoa_nv(self):
