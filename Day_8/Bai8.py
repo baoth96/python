@@ -80,14 +80,15 @@
 #     def change_age(self, new_age):
 #         self.age = new_age
 
-#     def change_school_name(self, new_name):
-#         Student.school_name = new_name
+#     @classmethod
+#     def change_school_name(cls, new_name):
+#         cls.school_name = new_name
 
 # s1 = Student("Harry", 12)
 # s1.show()
 # s1.change_age(15)
 # s1.show()
-# s1.change_school_name("XYZ School")
+# Student.change_school_name("XYZ School")
 # s1.show()
 
 # --------------------------------------------------------------------------------------
@@ -119,6 +120,64 @@
 # peggy.whoisthis()
 # peggy.swim()
 # peggy.run()
+
+# --------------------------------------------------------------------------------------
+
+# ĐƠN THỪA KẾ:
+
+# class Vehicle: 
+# 	def Vehicle_info(self): 
+# 		print('Inside Vehicle class') 
+
+# class Car(Vehicle): 
+# 	def car_info(self): 
+# 		print('Inside Car class') 
+
+# car = Car() 
+# car.Vehicle_info() 
+# car.car_info()
+
+# --------------------------------------------------------------------------------------
+
+# ĐA THỪA KẾ:
+
+# class Father():
+#     def Driving(self):
+#         print("Enjoys Driving")
+
+# class Mother():
+#     def Cooking(self):
+#         print("Enjoys Cooking")
+
+# class Child(Father, Mother):
+#     def Playing(self):
+#         print("Child Loves Playing")
+
+# c = Child()
+# c.Driving()
+# c.Cooking()
+# c.Playing()
+
+# --------------------------------------------------------------------------------------
+
+# THỪA KẾ NHIỀU CẤP:
+
+class Animal:
+    def speak(self):
+        print("Animal Speaking")
+
+class Dog(Animal):
+    def bark(self):
+        print("dog barking")
+
+class DogChild(Dog):
+    def eat(self):
+        print("Eating bread...")
+
+d = DogChild()
+d.bark()
+d.speak()
+d.eat()
 
 # --------------------------------------------------------------------------------------
 
