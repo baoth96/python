@@ -1,2 +1,2 @@
-stud.name = 'Emma' 
-# stud.age = 15 
+    # def modify_school_name(cls, new_name):
+    #     cls.school_name = new_name

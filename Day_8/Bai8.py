@@ -49,20 +49,46 @@
 
 # PHƯƠNG THỨC (Methods):
 
-class Parrot:
+# class Parrot:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     def sing(self, song):
+#         return "{} sings {}".format(self.name, song)
+    
+#     def dance(self):
+#         return "{} is now dancing".format(self.name)
+
+# blu = Parrot("Blu", 10)
+# print(blu.sing("Happy"))
+# print(blu.dance())
+
+# --------------------------------------------------------------------------------------
+
+# PHƯƠNG THỨC LỚP (Class methods):
+
+class Student:
+    school_name = "ABC School"
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-    def sing(self, song):
-        return "{} sings {}".format(self.name, song)
-    
-    def dance(self):
-        return "{} is now dancing".format(self.name)
+    def show(self):
+        print("Student:", self.name, self.age, Student.school_name)
 
-blu = Parrot("Blu", 10)
-print(blu.sing("Happy"))
-print(blu.dance())
+    def change_age(self, new_age):
+        self.age = new_age
+
+    def change_school_name(self, new_name):
+        self.school_name = new_name
+
+s1 = Student("Harry", 12)
+s1.show()
+s1.change_age(15)
+s1.show()
+Student.change_school_name("XYZ School")
+s1.show()
 
 # --------------------------------------------------------------------------------------
 
