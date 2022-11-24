@@ -162,22 +162,61 @@
 
 # THỪA KẾ NHIỀU CẤP:
 
-class Animal:
-    def speak(self):
-        print("Animal Speaking")
+# class Animal:
+#     def speak(self):
+#         print("Animal Speaking")
 
-class Dog(Animal):
-    def bark(self):
-        print("dog barking")
+# class Dog(Animal):
+#     def bark(self):
+#         print("dog barking")
 
-class DogChild(Dog):
-    def eat(self):
-        print("Eating bread...")
+# class DogChild(Dog):
+#     def eat(self):
+#         print("Eating bread...")
 
-d = DogChild()
-d.bark()
-d.speak()
-d.eat()
+# d = DogChild()
+# d.bark()
+# d.speak()
+# d.eat()
+
+# --------------------------------------------------------------------------------------
+
+# THỪA KẾ (Hybrid Inheritance):
+
+# class Vehicle: 
+# 	def info(self): 
+# 		print("This is Vehicle") 
+
+# class Car(Vehicle): 
+# 	def car_info(self, name): 
+# 		print("Car name is:", name) 
+
+# class Truck(Vehicle): 
+# 	def truck_info(self, name): 
+# 		print("Truck name is:", name) 
+
+# obj1 = Car() 
+# obj1.info() 
+# obj1.car_info('BMW') 
+# obj2 = Truck() 
+# obj2.info() 
+# obj2.truck_info('Ford')
+
+# --------------------------------------------------------------------------------------
+
+# THỪA KẾ (super() function):
+
+class Company:
+    def company_name(self):
+        return "Google"
+
+class Employee (Company):
+    def info(self):
+        c_name = super().company_name()
+        print("Jessa works at", c_name)
+
+emp = Employee()
+emp.info()
 
 # --------------------------------------------------------------------------------------
 
