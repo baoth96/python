@@ -220,7 +220,7 @@
 
 # --------------------------------------------------------------------------------------
 
-# PHƯƠNG THỨC GHI ĐÈ (Overriding):
+# TÍNH GHI ĐÈ (Overriding):
 
 # class Vehicle: 
 # 	def max_speed(self): 
@@ -235,7 +235,7 @@
 
 # --------------------------------------------------------------------------------------
 
-# PHƯƠNG THỨC NẠP CHỒNG (Overloading): Phương thức cùng tên nhưng khác tham số, gọi là overloading
+# TÍNH NẠP CHỒNG (Overloading): Phương thức cùng tên nhưng khác tham số, gọi là overloading
 
 # VÍ DỤ 1:
 
@@ -265,5 +265,86 @@
 
 # --------------------------------------------------------------------------------------
 
-# BAO ĐÓNG (Encapsulation):
+# Access Modifiers in Python:
 
+# 01: Private Member:
+
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.__salary = salary
+
+# emp = Employee("Jessa", 10000)
+# print("Name:", emp.name)
+# print("Salary:", emp._Employee__salary)
+
+
+# 02: Protected Member:
+
+# class Company:
+# 	def __init__(self): 
+# 		self._project = "NLP" 
+
+# class Employee(Company):
+# 	def __init__(self, name): 
+# 		self.name = name 
+# 		Company.__init__(self) 
+	
+# 	def show(self): 
+# 		print("Employee name :", self.name) 
+# 		print("Working on project :", self._project) 
+
+# c = Employee("Jessa") 
+# c.show() 
+# print('Project:', c._project)
+
+# --------------------------------------------------------------------------------------
+
+# Getter & Setter:
+
+# class Student: 
+# 	def __init__(self, name, age): 
+# 		self.name = name # private member 
+# 		self.__age = age 
+	 
+# 	def get_age(self): # getter method
+# 		return self.__age 
+	
+# 	def set_age(self, age): # setter method 
+# 		if age >= 15:
+# 			self.__age = age
+# 		else:
+# 			Raise ("Error") 
+
+# stud = Student('Jessa', 14) 
+# # retrieving age using getter 
+# print('Name:', stud.name, stud.get_age()) 
+# # changing age using setter 
+# stud.set_age(16) 
+# # retrieving age using getter 
+# print('Name:', stud.name, stud.get_age())
+
+# --------------------------------------------------------------------------------------
+
+# TÍNH ĐA HÌNH (Polymorphism):
+
+class Ferrari: 
+	def fuel_type(self): 
+		print("Petrol") 
+	
+	def max_speed(self): 
+		print("Max speed 350") 
+
+class BMW: 
+	def fuel_type(self): 
+		print("Diesel") 
+	def max_speed(self): 
+		print("Max speed is 240") 
+
+ferrari = Ferrari() 
+bmw = BMW() 
+# iterate objects of same type 
+for car in (ferrari, bmw): 
+	# call methods without checking class of object 
+	car.fuel_type() 
+	car.max_speed()
