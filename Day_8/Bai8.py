@@ -206,17 +206,64 @@
 
 # THỪA KẾ (super() function):
 
-class Company:
-    def company_name(self):
-        return "Google"
+# class Company:
+#     def company_name(self):
+#         return "Google"
 
-class Employee (Company):
-    def info(self):
-        c_name = super().company_name()
-        print("Jessa works at", c_name)
+# class Employee (Company):
+#     def info(self):
+#         c_name = super().company_name()
+#         print("Jessa works at", c_name)
 
-emp = Employee()
-emp.info()
+# emp = Employee()
+# emp.info()
 
 # --------------------------------------------------------------------------------------
+
+# PHƯƠNG THỨC GHI ĐÈ (Overriding):
+
+# class Vehicle: 
+# 	def max_speed(self): 
+# 		print("max speed is 100 Km/Hour")
+
+# class Car(Vehicle): 
+# 	def max_speed(self): 
+# 		print("max speed is 200 Km/Hour")
+
+# car = Car() 
+# car.max_speed()
+
+# --------------------------------------------------------------------------------------
+
+# PHƯƠNG THỨC NẠP CHỒNG (Overloading): Phương thức cùng tên nhưng khác tham số, gọi là overloading
+
+# VÍ DỤ 1:
+
+# def addition(a, b): 
+# 	c = a + b 
+# 	print(c) 
+
+# def addition(a, b, c): 
+# 	d = a + b + c 
+# 	print(d) 
+
+# addition(3, 7, 5)
+
+
+# VÍ DỤ 2:
+
+# class Shape:
+#     def area(self, a, b=0):
+#         if b > 0:
+#             print("Area of Rectangle is:", a * b)
+#         else:
+#             print("Area of Square is:", a **2)
+
+# s = Shape()
+# s.area(4)
+# s.area(4, 5)
+
+# --------------------------------------------------------------------------------------
+
+# BAO ĐÓNG (Encapsulation):
 
