@@ -1,5 +1,4 @@
 # BÀI 1:
-
 # Given an array of integers nums, calculate the pivot index of this array.
 # The pivot index is the index where the sum of all the numbers strictly to the left 
 # of the index is equal to the sum of all the numbers strictly to the index's right.
@@ -17,3 +16,24 @@
 
 # GIẢI:
 
+
+
+# ------------------------------------------------------------------------------------------------
+
+# BÀI 2:
+# Given an integer x, return true if x is a palindrome, and false otherwise.
+
+# Example 1:
+# Input: x = 121
+# Output: true
+# Explanation: 121 reads as 121 from left to right and from right to left.
+
+# Example 2:
+# Input: x = -121
+# Output: false
+# Explanation: From left to right, it reads -121. From right to left, it becomes 121-. 
+# Therefore it is not a palindrome.
+
+# GIẢI:
+
+x = int(input())
