@@ -18,6 +18,14 @@
 
 nums = [1, 7, 3, 6, 5, 6]
 
+sumL = 0
+sumR = sum(nums)
+for i in range(len(nums)):
+    sumR = sumR - nums[i]
+    if sumL == sumR:
+        print(i)
+    sumL = sumL + nums[i]
+print(-1)
 
 
 # ------------------------------------------------------------------------------------------------
